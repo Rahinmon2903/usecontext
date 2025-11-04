@@ -7,7 +7,7 @@ export const myContext = createContext();
 
 const App = () => {
 
-  const [name, setName] = useState("John");
+  const [name, setName] = useState("snow");
 
   return (
     <div>
