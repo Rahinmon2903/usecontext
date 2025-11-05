@@ -5,11 +5,14 @@ const CompD = () => {
      const[name, setName]=useContext(myContext)
     
         const handleclick =()=>{
-            setName("sukin")
+            setName((prev)=>({
+                ...prev,
+                age:30
+            }))
         }
     return (
         <div>
-            <h1>{name}</h1>
+            <h1>{name.age}</h1>
             <button onClick={handleclick}>change</button>
             
         </div>
